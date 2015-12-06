@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+        <head>
+                <meta charset="UTF-8">
+                <meta name="author" content="Orkan, Bryan, Marcel, Pascal">
+                <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+                <link rel="stylesheet" type="text/css" href="css/style.css">
+
+                <title>ChatApp v0.1 (Alpha)</title>
+        </head>
+
+<body text="#000000" bgcolor="#FFFFFF" link="#FF0000" alink="#FF0000" vlink="#FF0000">
+
+<script language="JavaScript">
+        function ChatWin(ele, stat) {
+        document.getElementById(ele).style.display = stat;
+        }
+</script>
+
+        <div class="menubar">
+                <a class="menubarLink" onclick="ChatWin('AboutApp', 'block');">About the App</a>
+        </div>
+        <h3 align=center>ChatApp; Chat ins Jenseits (Entscheidet euch f&uuml;r einen Namen.)</h3>
+        <h2 align=center>Das ist eine Private Webseite!</h2>
+        <div class="LogInScreen">
+                <form action="#ourServer" method="post">
+                        <input type=text size=32 placeholder=Name>
+                        <input type=password size=32 placeholder=Password>
+                        <input type=submit value=Enter>
+                </form>
+                <br>
+        </div>
+        <div id="AboutApp" class="win">
+                <br> Chat Ins Jenseits v0.1 (Alpha) <br> <input type=button onclick="ChatWin('AboutApp', 'none');" value=Close>
+        </div>
+</body>
+</html>
